@@ -1,1 +1,1 @@
-# meanbuy.com
+# clone of meanbuy.com

@@ -1,0 +1,116 @@
+#table{
+    width:160px;
+    height:200px;
+    margin-top:50px;
+}
+#table p{
+border-bottom:1px solid black;
+margin-bottom:30px;
+}
+#table button{
+    font-size:16px;
+    display:flex;
+    width:160px;
+    margin-top:30px;
+    border:0px solid black;
+    border-bottom:1px solid black;
+    background-color:white;
+}
+#table button:hover{
+    text-decoration:underline;
+}
+#table button i{
+    margin-left:70px;
+    margin-top:-5px;
+}
+
+
+#bonus-deals{
+    margin-left:12%;
+    margin-top:-200px;
+    width:92%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,440px);
+   }
+   #bonus-deals>div{
+     border: 1px solid black;
+     width:75%;
+   }
+   #bonus-deals img{
+     width:100%;
+     height: 300px;
+     margin-right:129px;
+     margin-bottom:5px;
+   }
+   #bonus-deals button{
+     width: 119px;
+     height:30px;
+     background-color:white;
+     color:#206a00;
+     border:none;
+    text-decoration:bold;
+     margin-left:140px;
+     margin-top:-30px;
+   }
+   #bonus-deals button:hover{
+     background-color:rgb(195, 195, 64);
+   }
+   #namee{
+    margin-left:0px;
+    margin-top:10px;
+    text-align:left;
+   
+  }
+  #pricee{
+    font-size:25px;
+    width:235px;
+    color: #f98d29;
+    margin-left:10px;
+    margin-top:30px;
+   border-top:2px solid black;
+  }
+  #saveprice{
+    background-color: #48ee01;
+    width: 88px;
+    margin-left:160px;
+   margin-top:-70px; 
+  }
+  #wasprice{
+    margin-left:10px;
+  }
+
+
+  #bonous-deal{
+    border: 1px solid black;
+    width:20%;
+    margin:auto;
+  }
+  #bonous-deal img{
+    width:100%;
+  }
+  #bonous-deal p{
+    background-color: #48ee01;
+    width: 88px;
+    margin-left:200px;
+   margin-top:-80px; 
+  }
+  #bonous-deal button{
+    width: 119px;
+    height:30px;
+    background-color:white;
+    border:none;
+    color:#206a00;
+   text-decoration:bold;
+    margin-left:170px;
+    margin-top:1px;
+
+  }
+  #bonous-deal h2{
+    font-size:25px;
+    width:275px;
+    color: #f98d29;
+    margin-left:10px;
+    margin-top:30px;
+   border-top:2px solid black;
+  }
