@@ -10,11 +10,14 @@ showData(cartData);
 console.log(totalPrice);
 
 function showData(data) {
+  console.log("shoedata");
   let append = document.querySelector("#products");
   append.innerHTML = "";
-  data.forEach((el) => {
+  data.forEach((el, index) => {
     totalPrice += +el.price.split(",").join("");
     // console.log(el);
+
+    abc(el, index);
 
     append.innerHTML += `
      <tr class='product'>
@@ -30,7 +33,7 @@ function showData(data) {
       <p>color: Blue</p>
       <p class='qty'>
         <span>Select qty:</span>
-        <input type='number' min='1' value='1' />
+        <input type='number' min='1' onchange="qtyChange()" />
       </p>
 
       <p class='freedel'>
@@ -42,7 +45,7 @@ function showData(data) {
           <span class='shipdate'>Delivery Date: </span>July 12, 2022
         </b>
       </p>
-      <p class='delete-item'>
+      <p class='delete-item' onclick="deleteClass(${index})">
         <i class='fa fa-trash' aria-hidden='true'></i>
       </p>
     </div>
@@ -61,16 +64,19 @@ function showData(data) {
 </tr>
  `;
     let subtotal = document.querySelector("#subTotal");
-    subtotal.innerHTML = `${totalPrice}`;
+    subtotal.innerHTML = `${totalPrice.toFixed(2)}`;
 
     let grandTotal = document.querySelector("#grandTotal2");
-    grandTotal.innerHTML = `${totalPrice}`;
+    grandTotal.innerHTML = `${totalPrice.toFixed(2)}`;
 
     let simplePay = document.querySelector(
       "#checkout-container > div > div.cartrem > div > span > strong > span"
     );
 
     simplePay.innerHTML = `${(totalPrice / 3).toFixed(2)}`;
+
+    let simpl = simplePay.innerText;
+    localStorage.setItem("simpl", simpl);
 
     let cartItems = document.querySelector(
       "#checkout-container > div > div.cartrem > p:nth-child(1) > b:nth-child(1) > span.cartitems"
@@ -80,10 +86,27 @@ function showData(data) {
   });
 }
 
-// {
-//     "image": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMzg4XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
-//     "name": "Zeblaze Stratos 2 Smartwatch",
-//     "price": "$1,099.99",
-//     "save": "4.5/5",
-//     "wasPrice": "$1,999.99"
-// }
+//! Delete Data
+
+function deleteClass(data) {
+  //   console.log(event);
+  //   console.log(data);
+
+  cartData.splice(data, 1);
+  localStorage.setItem("cartData", JSON.stringify(cartData));
+  showData(cartData);
+}
+
+function qtyChange() {
+  // let qty = event.target.value;
+  showData(cartData);
+  function abc(el, index) {
+    console.log("fun1");
+    let qty = event.target.value;
+    cartData[index].qty = qty;
+    localStorage.setItem("cartData", JSON.stringify(cartData));
+    showData(cartData);
+  }
+}
+
+function abc() {}
