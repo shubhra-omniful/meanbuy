@@ -1,0 +1,244 @@
+
+*{
+    font-family: sans-serif;
+}
+#topBlankbar{
+    display: flex;
+}
+#heading{
+    display: flex;
+    justify-content: center;
+
+}
+#sideheader{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 10px;
+    margin-left: 400px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+#imgLogo{
+    width: 190px;
+    height:65px ;
+}
+#loginDiv{
+    margin-left: 50px;
+    font-size: 14px;
+    margin-top: -10px;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#headerBox2{
+    display: flex;
+}
+#searchInput{
+    margin-top: 25px;
+    margin-left: 30px;
+    padding: 3px;
+    width: 300px;
+}
+.headerBox2{
+    display: flex;
+    justify-content: space-evenly;
+    width: 55%;
+    font-size: 11px;
+    margin-left: 80px;
+}
+hr{
+    height: 1px;
+    background-color: rgb(196, 191, 191);
+    
+}
+
+img:hover{
+  cursor: pointer;
+}
+h4:hover,p:hover,#category{
+  cursor: pointer;
+}
+
+
+
+/* //============//// */
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+.bigimage{
+height: 380px;
+width: 125%;
+margin-left: -120px;
+margin-top: 30px;
+}
+#cartimg{
+width: 18px;
+height: 18px;
+}
+.productimg{
+width: 320px;
+height: 320px;
+}
+/* .productname{
+display: inline-block;
+} */
+.rating{
+width: 70px;
+padding: 3px;
+background-color: rgb(32, 183, 32);
+border: none;
+border-radius: 5px;
+color: white;
+margin-left: 240px;
+}
+.pricedisco{
+display: flex;
+justify-content: space-between;
+margin-top: -20px;
+}
+#productdiv{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+justify-content: space-evenly;
+margin-left: 10px;
+}
+.productinfo{
+padding: 5px;
+}
+.productprice{
+color: orange;
+font-size: larger;
+}
+
+.discount{
+color: #3CC101;
+font-size: 14px;
+margin-top: 25px;
+}
+.head3{
+margin-left: 20px;
+}
+#picturediv{
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+padding: 10px;
+margin-top: 20px;
+background-color: #F2F2F2;
+line-height: 10px;
+}
+#subscribebtn{
+background-color: #F3921F;
+border: none;
+color: white;
+border-radius: 5px;
+margin-left: -5px;
+width: 80px;
+padding: 4px;
+}
+#picturediv>div>h3,#lastdiv>h3{
+font-size: 15px;
+color: #F39441;
+font-weight: lighter;
+}
+#picturediv>div>p,#lastdiv>p{
+color: rgb(108, 103, 103);
+font-size: 12px;
+}
+#lastdiv{
+background-color: #F2F2F2;
+padding: 10px;
+}
+#backdiv{
+ background-color: #F2F2F2;
+}
+
