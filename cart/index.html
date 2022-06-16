@@ -92,6 +92,13 @@
         </div>
       </div>
     </div>
-    <script type="module" src="cart.js"></script>
+    <script src="cart.js"></script>
   </body>
 </html>
+
+<script type="module">
+  import { navbar } from "../component/navbar.js";
+
+  let n = document.querySelector("#navbar");
+  n.innerHTML = navbar();
+</script>

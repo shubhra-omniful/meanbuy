@@ -219,6 +219,71 @@ hr {
   border: 0;
 }
 
+#topBlankbar {
+  display: flex;
+}
+#heading {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+#sideheader {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 10px;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 12px;
+}
+#imgLogo {
+  width: 190px;
+  height: 65px;
+}
+#loginDiv {
+  margin-left: 50px;
+  font-size: 14px;
+  margin-top: -10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img#cartimg {
+  width: 15px;
+  height: 15px;
+}
+#headerBox2 {
+  display: flex;
+}
+#searchInput {
+  margin-top: 25px;
+  margin-left: 30px;
+  padding: 3px;
+  width: 300px;
+}
+.headerBox2 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 55%;
+  font-size: 11px;
+  margin-left: 80px;
+}
+hr {
+  height: 1px;
+  background-color: rgb(196, 191, 191);
+}
+
+img:hover {
+  cursor: pointer;
+}
+h4:hover,
+p:hover,
+#category {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 991px) {
   .carttotalwrap {
     width: 100%;
@@ -234,6 +299,18 @@ hr {
   }
   #checkout-container {
     width: 75%;
+  }
+  .headerBox2 {
+    /* flex-direction: column; */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 14px;
+    gap: 10px;
+  }
+  #sideheader {
+    display: none;
   }
 }
 @media screen and (max-width: 470px) {
@@ -265,72 +342,11 @@ hr {
   } */
 }
 
-
-
 /* \\\\\\\\\\=====\\\\ */
-
-#topBlankbar{
-  display: flex;
-}
-#heading{
-  display: flex;
-  justify-content: center;
-
-}
-#sideheader{
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 10px;
-  margin-left: 400px;
-  margin-top: 20px;
-  font-size: 12px;
-}
-#imgLogo{
-  width: 190px;
-  height:65px ;
-}
-#loginDiv{
-  margin-left: 50px;
-  font-size: 14px;
-  margin-top: -10px;
-
-}
-a{
-  text-decoration: none;
-  color: black;
-}
-img#cartimg{
-  width: 15px;
-  height: 15px;
-}
-#headerBox2{
-  display: flex;
-}
-#searchInput{
-  margin-top: 25px;
-  margin-left: 30px;
-  padding: 3px;
-  width: 300px;
-}
-.headerBox2{
-  display: flex;
-  justify-content: space-evenly;
-  width: 55%;
-  font-size: 11px;
-  margin-left: 80px;
-}
-hr{
-  height: 1px;
-  background-color: rgb(196, 191, 191);
-  
-}
-
-img:hover{
-cursor: pointer;
-}
-h4:hover,p:hover,#category{
-cursor: pointer;
-}
+/* #navbar {
+  width: 100%;
+  margin: auto;
+} */
 
 /* .signinbtn {
   display: inline-block;
