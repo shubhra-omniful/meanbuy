@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Document</title>
     <link rel="stylesheet" href="paymentsuccesspage.css"/>
+    <link rel="stylesheet" href="../homepage.css">
 </head>
 <body>
+  <div id="navbar"></div>
   <div id="ordersuccess">
     <h2>Your order Has been sucessfully placed</h2>
     <p>July 29 it will be delivered in your address</p>
@@ -16,3 +18,7 @@
  </div>
 </body>
 </html>
+<script type="module">
+  import {navbar} from '../component/navbar.js';
+  document.getElementById('navbar').innerHTML=navbar();
+</script>

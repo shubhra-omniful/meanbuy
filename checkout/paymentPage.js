@@ -25,7 +25,7 @@ card.forEach(element => {
         obj1[Number((element.price.split(",").join("")))]=obj1[Number((element.price.split(",").join("")))]+1;
     }
 
-    totalAmount=totalAmount+Number((element.price.split(",").join("")));
+    totalAmount=totalAmount+Number((element.price.split(",").join("")))*Number(element.qty);
 });
 
 for(let i in obj){
@@ -34,13 +34,13 @@ for(let i in obj){
 for(let j in obj1){
     storePrice=storePrice+" "+" "+" "+(obj1[j])*j+" "+" "+" ";
 }
-console.log(obj1)
+
 document.getElementById('items').innerText=storeItems;
 
 document.getElementById('iteamPrice').innerText=storePrice;
 
 
-document.getElementById('subTotal').innerText=totalAmount.toFixed(2);
+document.getElementById('subTotal').innerText=totalAmount;
 
 couponPress=()=>{
     let coupon=document.getElementById('promotionalCode').value;
