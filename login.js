@@ -26,3 +26,6 @@ form.addEventListener("submit",function(event){
         }
     });
     
+import {header} from "./component/navbar.js";
+let navbar= document.getElementById('header');
+navbar.innerHTML=header();
