@@ -1,0 +1,317 @@
+hr{
+    border: 1px solid orange;
+}
+#header{
+    display: flex;
+    justify-content: space-around;
+    gap: 35%;
+}
+#logo{
+    /* border: 1px solid black; */
+    width: 20%;
+}
+img{
+    margin-left: 20%;
+    width: 80%;
+    height: 50px;
+}
+#below-logo{
+    font-weight: 700;
+    box-sizing: border-box;
+    line-height: 40px;
+    font-family: Roboto,sans-serif;
+    color: #455a64;
+    font-size: 14px;
+    display: flex;
+}
+#below-logo>p{
+    margin-top: -10px;
+}
+#contshop{
+    width: 50%;
+    height:20px;
+    border: 1px solid black;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    /* display: flex; */
+}
+#contshop>p{
+    font-size: 12px;
+    margin-top:-10px;
+}
+#regd{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    height: 60px;
+    margin-top: 20px;
+}
+
+#regd p{
+    color: #474747;
+    box-sizing: border-box;
+    font-size: 11px;
+    text-align: right;
+    font-family: Roboto,sans-serif;
+    line-height: 1.42857143;
+    box-sizing: border-box;
+}
+#small-login{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    height: 50px;
+    margin-left: 25px;
+}
+#small-login p{
+    cursor: pointer;
+    text-decoration: none;
+    color: #474747;
+    font-size: 11px;
+    box-sizing: border-box;
+    text-align: right;
+    font-family: Roboto,sans-serif;
+    line-height: 1.42857143;
+    margin-top: 2px;
+}
+#small-login h3{
+    font-weight: 700;
+    box-sizing: border-box;    
+    font-size: 14px;
+    color: #474747;
+    text-align: right;
+    font-family: Roboto,sans-serif;
+    line-height: 1.42857143;
+    margin-top: -10px;
+    margin-left:10px;
+}
+/*cart*/
+#small-login img{     
+    width: 12%;
+    height:25px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+#small-login>div>div{
+    display: flex;
+    gap: 8px;
+    height:auto;
+    width: 125px;
+    margin-left: 10px;
+    /* border: 1px solid black; */
+}
+#small-login>div>div>img{
+    height: 15px;
+    margin-top:1px;
+}
+
+/* .............................................................................*/
+
+#main{
+    /* width: 99%; */
+    height: 500px;
+    margin: auto;
+    display: flex;
+    padding: 20px 20px 35px 20px;
+    border: 1px solid gray;
+}
+#left{
+    width: 68%;
+    height: 500px;
+    /* border: 1px solid black; */
+}
+#below-heading>p{
+    font-weight: 700;
+    box-sizing: border-box;
+    line-height: 40px;
+    font-family: Roboto,sans-serif;
+    color: orange;
+    font-size: 20px;
+    margin-top: -4px;
+    margin-left:16px;
+}
+
+#right{
+    width: 45%;
+    height: 500px;
+    padding: 0px 0px 0px 100px;
+
+    /* border: 1px solid red; */
+}
+#fb-google{
+    /* border: 1px solid darkblue; */
+    width: 40%;
+    height: auto;
+    margin-left: 10px;
+    display: flex;
+}
+#fb{
+    margin-left: -5px;
+    cursor: pointer;
+}
+#google{
+    margin-top: 13px;
+    margin-left: -5px;
+    height: 25px;
+    cursor: pointer;
+}
+#form{
+    margin-left: 10px;
+}
+input{
+    font-size: 20px;
+    padding: 10px 500px 10px 0px;
+}
+#submit{
+    padding: 0px 350px 0px 345px;
+    background-color: orange;
+    color: white;
+    border: 1px solid orange;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#forget{
+    text-align: center;
+    cursor: pointer;
+    color: #000;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: Roboto,sans-serif;
+    line-height: 1.42857143;
+}
+#forget:hover{
+    color: orange;
+    font-weight: 700;
+}
+#signup{
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #455a64;
+    box-sizing: border-box;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 12px;
+    font-family: Roboto,sans-serif;
+    line-height: 1.42857143;
+}
+
+/*.................................................................................................................. */
+
+#cart{
+    width: 90%;
+    height: auto;
+    border: 1px solid #d3d3d3;
+    margin-top: 20px;
+    background: #fff;
+}
+#cart>div>p{
+    height: 60px;
+    background: #fff;
+    font-weight: 700;
+    text-align: center;
+    line-height: 60px;
+    font-size: medium;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+    font-family: Roboto,sans-serif;
+    color: #455a64;
+}
+#price{
+    font-weight: 700;
+    box-sizing: border-box;
+    color: #455a64;
+    cursor: default;
+    font-family: Roboto,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+#cart>hr{
+    border: 1px solid #d3d3d3;
+    width: 90%;
+}
+button{
+    font-size: 22px;
+    padding: 3px 120px;
+    margin-left:28px;
+    margin-bottom: 20px;
+    background-color: white;
+    color: orange;
+    border: 1px solid orange;
+    cursor: pointer;
+}
+#logo2{
+    margin-top: 10px;
+    height: 100px;
+    width: 40%;
+}
+h1{
+    font-weight: 700;
+    box-sizing: border-box;
+    font-family: Roboto,sans-serif;
+    cursor: default;
+    font-size: 18px;
+    line-height: 1.1;
+    color: #455a64;
+    margin-left: 80px;
+}
+h2{
+    font-weight: 700;
+    box-sizing: border-box;
+    font-family: Roboto,sans-serif;
+    cursor: default;
+    font-size: 12px;
+    line-height: 1.1;
+    color: #455a64;    
+    margin-left: 70px;
+}
+#hr{
+    border: 2px solid orange;
+    width: 10%;
+    margin-top: -20px;
+    
+}
+/* ......................................................................................*/
+
+#footer{
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    background-color: #f3f1f1;
+    border: 1px solid #d3d3d3;;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#box>h4{
+    font-size: 14px;
+    color: #f3921f;
+    font-family: Roboto,sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    display: block;
+}
+#box>p{
+    color: #666;
+    font-size: 12px;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-align: -webkit-match-parent;
+    font-family: Roboto,sans-serif;
+    line-height: 1;
+}
