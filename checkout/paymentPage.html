@@ -12,7 +12,7 @@
    <div id="paymentPage">
     <div>
         <div id="paymentEmail">
-            <p id="email">shubhrakantighosh@gmail.com</p>
+            <p id="email"></p>
             <h5>Phone Number</h5>
             <input type="tel" placeholder="Phone Number">
             <p>I agree to be contacted through Whatsapp for Order Updates</p>
@@ -119,14 +119,14 @@
             </div>
         </div>
         <p>We accept all major credit and debit cards of Indian and International banks.</p>
-        <button>PAY NOW!</button>
+        <button onclick="payNow()">PAY NOW!</button>
     </div>
 
     <div>
         <div id="deliveryDate">
             <div>
                <div>
-                <h4>Watch</h4>
+                <h4 id="items"></h4>
                </div>
                <div>
                 <div>
@@ -138,7 +138,7 @@
                </div>
             </div>
             <div>
-                <h5>$94.00</h5>
+                <h5 id="iteamPrice"></h5>
             </div>
         </div>
         <h4><a href="#">Edit Cart</a></h4>
@@ -149,19 +149,19 @@
                 <p>Shipping:</p>
             </div>
             <div>
-                <p>$59.00</p>
+                <p id="subTotal"></p>
                 <p>Free</p>
             </div>
         </div>
 
         <div id="totalEMI">
-            <p>Total:$86</p>
+            <!-- <p>Total:$86</p> -->
             <div>
                 <div>
                     <p>Or 3 interest free payments of</p>
                 </div>
                 <div>
-                    <p>$ 2833</p>
+                    <p id="simpl"></p>
                 </div>
                 <div>
                     <p>with</p>
@@ -172,7 +172,7 @@
             </div>
         </div>
         <div>
-            <p>Get up to T500.00 OFF on your First Time Prepaid Order</p>
+            <p>Get up to 500 off (MASAI500) on your First Time Prepaid Order</p>
             <div>
                 <div>
                     <p>(COD Excluded) with coupon</p>
@@ -184,7 +184,7 @@
             <p>Got a Promotional Code? Use below:</p>
         </div>    
         <div>
-            <input type="text" placeholder="Promotional Code">
+            <input type="text" placeholder="Promotional Code" id="promotionalCode">
             <button onclick="couponPress()">Apply Code</button>
         </div>
         <div>
