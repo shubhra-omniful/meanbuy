@@ -251,6 +251,7 @@ button{
     background-color: white;
     color: orange;
     border: 1px solid orange;
+    cursor: pointer;
 }
 #logo2{
     margin-top: 10px;

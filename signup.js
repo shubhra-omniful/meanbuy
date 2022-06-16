@@ -8,6 +8,13 @@ form.addEventListener('submit',function(){
        pass2:form.pass2.value,   
     }
 
+    if(data.pass1==data.pass2)
+    {
         localStorage.setItem('userData',JSON.stringify(data));
         window.location.reload();
+    }
+    else{
+        alert('password not matched');
+    }
+        
 })
