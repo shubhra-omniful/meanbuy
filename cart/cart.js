@@ -85,6 +85,15 @@ function showData(data) {
     );
 
     cartItems.innerHTML = `${data.length}`;
+
+    function deleteClass(data) {
+      //   console.log(event);
+      console.log(data);
+
+      cartData.splice(data, 1);
+      localStorage.setItem("cartData", JSON.stringify(cartData));
+      showData(cartData);
+    }
   });
 }
 
