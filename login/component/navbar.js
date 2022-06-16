@@ -4,7 +4,7 @@ function header()
     <div id="logo">
     <img src="https://d64lkarmo2mrq.cloudfront.net/baselogo.png" alt="logo">
 <div id="below-logo">
-    <p>LOGIN / SIGNUP |</p>
+    <p>LOGIN / SIGNUP</p>
     <div id="contshop">
          <p>Continue Shopping ></p>
          <!-- <p></p> -->

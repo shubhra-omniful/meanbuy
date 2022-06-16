@@ -15,8 +15,7 @@ form.addEventListener('submit',function(){
     }
     else{
         alert('password not matched');
-    }
-        
+    }      
 })
 
 import {header} from "./component/navbar.js";

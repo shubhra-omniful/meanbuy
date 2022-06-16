@@ -25,7 +25,7 @@ form.addEventListener("submit",function(event){
             alert("invalid email or password");
         }
     });
-    
+     
 import {header} from "./component/navbar.js";
 let navbar= document.getElementById('header');
 navbar.innerHTML=header();
