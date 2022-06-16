@@ -7,17 +7,19 @@ let cart = document.querySelector(".cart");
 let totalPrice = 0;
 
 showData(cartData);
-console.log(totalPrice);
 
 function showData(data) {
   console.log("shoedata");
   let append = document.querySelector("#products");
   append.innerHTML = "";
   data.forEach((el, index) => {
-    totalPrice += +el.price.split(",").join("");
-    // console.log(el);
+    // el.qty !== undefined ? (el["qty"] = 1) : el[qty];
+    el.qty || (el["qty"] = 1);
 
-    abc(el, index);
+    totalPrice += +el.price.split(",").join("");
+    // console.log(el.qty, el);
+
+    // abc(el, index);
 
     append.innerHTML += `
      <tr class='product'>
@@ -33,7 +35,7 @@ function showData(data) {
       <p>color: Blue</p>
       <p class='qty'>
         <span>Select qty:</span>
-        <input type='number' min='1' onchange="qtyChange()" />
+        <input type='number' min='1' value=${el.qty} onchange="qtyChange()" />
       </p>
 
       <p class='freedel'>
@@ -97,16 +99,22 @@ function deleteClass(data) {
   showData(cartData);
 }
 
-function qtyChange() {
-  // let qty = event.target.value;
-  showData(cartData);
-  function abc(el, index) {
-    console.log("fun1");
-    let qty = event.target.value;
-    cartData[index].qty = qty;
-    localStorage.setItem("cartData", JSON.stringify(cartData));
-    showData(cartData);
-  }
-}
+// function qtyChange() {
+//   // let qty = event.target.value;
+//   showData(cartData);
+//   function abc(el, index) {
+//     console.log("fun1");
+//     let qty = event.target.value;
+//     cartData[index].qty = qty;
+//     localStorage.setItem("cartData", JSON.stringify(cartData));
+//     showData(cartData);
+//   }
+// }
 
-function abc() {}
+// function abc() {}
+
+let qtychange = document.querySelector(
+  "#products > tr:nth-child(1) > td.itemcontent > div > p.qty > input[type=number]"
+);
+
+console.log("qtychange: ", qtychange);
