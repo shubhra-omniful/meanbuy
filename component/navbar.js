@@ -1,5 +1,5 @@
 function navbar(){
-
+console.log("navappend")
     return `<div id="heading">
     <div>
       <a href="#"> <img id="imgLogo" src="https://meanbuyassets.s3.ap-south-1.amazonaws.com/baselogo.png" alt="meanbuyLogo"   /></a> 

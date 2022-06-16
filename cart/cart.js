@@ -1,5 +1,11 @@
 // console.log("hi");
 
+import {navbar} from "../component/navbar.js"
+
+let n=document.querySelector("#navbar")
+
+n.innerHTML=navbar();
+
 let cartData = JSON.parse(localStorage.getItem("cartData"));
 console.log(cartData);
 
@@ -10,7 +16,7 @@ showData(cartData);
 console.log(totalPrice);
 
 function showData(data) {
-  console.log("shoedata");
+  console.log("showdata");
   let append = document.querySelector("#products");
   append.innerHTML = "";
   data.forEach((el, index) => {
@@ -110,3 +116,5 @@ function qtyChange() {
 }
 
 function abc() {}
+
+
