@@ -42,9 +42,17 @@
 #paymentEmail+h5{
     margin-top: 45px;
 }
+#paymentEmail>div{
+    display: flex;
+}
+#paymentEmail>div>input{
+    margin-top: 22px;
+}
+#paymentEmail>div>p{
+    margin-left: 10px;
+}
 #paymentAddress{
     width: 100%;
-
 }
 #paymentAddress>div:first-child{
     width: 100%;
@@ -125,6 +133,13 @@
 #paymentMode>div:last-child>img{
     height: 60px;
 }
+#items{
+    margin-top: -2px;
+    margin-left: 5px;
+}
+#iteamPrice{
+    margin-top: -1px;
+}
 #deliveryDate{
     display: flex;
     width: 100%;
@@ -145,6 +160,7 @@
 }
 #deliveryDate>div:first-child>div:last-child>div:first-child>p{
     color: #F7941D;
+    margin-left: 5px;
 }
 #deliveryDate+h4>a{
     color: #F7941D;
@@ -244,4 +260,10 @@
     border-top:4px #F7941D solid;
     margin: auto;
     margin-top: 30px;
+}
+#simpl{
+    font-weight: 500;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
 }
