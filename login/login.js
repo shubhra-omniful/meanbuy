@@ -18,8 +18,8 @@ form.addEventListener("submit",function(event){
             alert("sign in successful");
 
             localStorage.setItem("signin",JSON.stringify(userData)); 
-    // redirect to homepage
-         window.location.href="index.html";      
+
+         window.location.href="./../index.html";      
         }
         else{
             alert("invalid email or password");
