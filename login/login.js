@@ -29,3 +29,7 @@ form.addEventListener("submit",function(event){
 import {header} from "./component/navbar.js";
 let navbar= document.getElementById('header');
 navbar.innerHTML=header();
+
+import {footer} from "./component/footer.js";
+let foot= document.getElementById('footer');
+foot.innerHTML=footer();

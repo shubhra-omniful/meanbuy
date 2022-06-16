@@ -315,3 +315,14 @@ h2{
     font-family: Roboto,sans-serif;
     line-height: 1;
 }
+#xyz{
+    background: url(https://d64lkarmo2mrq.cloudfront.net/icons/paymethods0622.png);
+    width: 275px;
+    height: 40px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: Roboto,sans-serif;
+    color: #455a64;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
