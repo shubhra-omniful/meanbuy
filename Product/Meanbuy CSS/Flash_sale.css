@@ -36,7 +36,7 @@ margin-bottom:30px;
     grid-template-rows: repeat(4,440px);
    }
    #bonus-deals>div{
-     border: 1px solid black;
+     /* border: 1px solid black; */
      width:75%;
    }
    #bonus-deals img{
