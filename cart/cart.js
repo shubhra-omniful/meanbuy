@@ -1,10 +1,10 @@
 // console.log("hi");
 
-import {navbar} from "../component/navbar.js"
+import { navbar } from "../component/navbar.js";
 
-let n=document.querySelector("#navbar")
+let n = document.querySelector("#navbar");
 
-n.innerHTML=navbar();
+n.innerHTML = navbar();
 
 let cartData = JSON.parse(localStorage.getItem("cartData"));
 console.log(cartData);
@@ -96,7 +96,7 @@ function showData(data) {
 
 function deleteClass(data) {
   //   console.log(event);
-  //   console.log(data);
+  console.log(data);
 
   cartData.splice(data, 1);
   localStorage.setItem("cartData", JSON.stringify(cartData));
@@ -116,5 +116,3 @@ function qtyChange() {
 }
 
 function abc() {}
-
-
