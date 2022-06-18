@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    img{
+        height: 80px;
+        margin-left: 50px;
+    }
+    #div{
+        height: 700px;
+        /* border: 2px solid black; */
+        display: flex;   
+    }
+    #div>div{
+        height: 700px;
+        width: 48%;
+        /* border: 2px solid black; */
+        margin: auto;
+    }
+    #small{
+        display: flex;
+        height: 275px;
+        /* width: 80%; */
+        /* border: 2px solid black; */
+        display: flex;
+       
+    }
+    #small>div{
+        height: 250px;
+        width: 30%;
+        /* border: 2px solid black; */
+        margin-right: 100px;
+        background-color: rgb(240, 239, 238);
+        text-align: center;
+    }
+     #f{
+        padding-left: 50px;}
+        h2{
+            color: rgb(206, 180, 34);
+        }
+        h2+p{
+            color: rgb(206, 180, 34);
+        }
+        input{
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            width: 90%;
+            margin-bottom: 30px;
+        }
+        select{
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            width: 90%;
+            margin-bottom: 20px;}
+
+        #j{
+            display: flex;
+        }
+        #sasquatch{
+            margin-left: -35%;
+            margin-right: -40%;
+        }
+        #as{
+            display: flex;
+            justify-content: space-between;
+        }
+        #no{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        legend{
+            margin-right: 20px;
+        }
+        #button{
+         padding-left:80px;
+           padding-right: 80px; 
+           padding-top: 10px;
+           padding-bottom: 10px;
+           background-color:rgb(255, 166, 0);
+           color: white;
+           border: 0ch;
+           cursor: pointer;
+
+        }
+        h3{
+            text-align: center;
+        }
+</style>
+<body>  
+    <div>
+        <img src="data:image/png;base64,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" alt="meanbuy.com">
+    </div>
+    <div id="div">
+        <div id="f">
+            <div>
+            <h1>it's Easy and Exciting to Sell With us!</h1>
+            <p>The revolutionary platform of meanbuy makes it an exciting place to sell your product and grow your bussiness. Meanbuy.com"Flixible-Price" Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, illo alias libero rem excepturi.</p>
+        </div>
+
+<!-- //2 -->
+        <div id="small">
+            <div>
+                <h2>1</h2>
+                <p>List your product</p>
+                <p>our expert will help you list your products on our dynamic platform</p>
+            </div>
+            <div>
+                <h2>2</h2>
+                <p>Sell accross India</p>
+                <p>With us.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum magni debitis eum itaque unde nulla, rem nobis ab aliquid quod doloremque.</p>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div id="small">
+             <div>
+                <h2>3</h2>
+                <p>Ship with us</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nihil non numquam doloribus nisi maxime odit optio fuga, amet fugit aperiam delectus quia atque dolore.</p>
+             </div>
+             <div>
+                <h2>4</h2>
+                <p>Earn Big</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quasi vitae aliquam modi veniam laudantium eveniet nemo.</p>
+             </div>
+        </div>
+        
+    </div>
+
+
+        <!-- part 2 -->
+        <div>
+            <h3>VENDOR REGISTRATION FORM</h3>
+            <Hr></Hr>
+            <p id="accExists">Already meanbuy vendor? Plese click hear to <a href="log.html">Login</a></p>
+            <div>
+                <form >
+                <input id="name" type="text" placeholder="Name"minlength="5" required />
+                <input id="number" type="number"placeholder="Enter your number"minlength="10" required />
+                <input id="email" type="email" placeholder="Email Address"minlength="12" required />
+                <input id="bus" type="text"placeholder="Business Name"minlength="5" required />
+                <input id="add" type="text" placeholder="Address 1"minlength="10" required />
+                <input id="add" type="text" placeholder="Address 2"minlength="10" required />
+                <input id="city" type="text"placeholder='City'>
+                <select id="id="state"" placeholder="State">
+                    <option value="in">Andhra Pradesh</option>
+                    <option value="ch">Arunachal pradesh</option>
+                    <option value="">Assam</option>
+                    <option value="us">Bihar</option>
+                    <option value="uk">Chandighar</option>
+                    <option value="">Goa</option>
+                    <option value="">Gujrat</option>
+                    <option value="">Himachal</option>
+                    <option value="">Haryana</option>
+                    <option value="">Jammu & kashmir</option>
+                    <option value="">Karnatka</option>
+                    <option value="">Jharkhand</option>
+                    <option value="">Kerla</option>
+                    <option value="">Madhay pradesh</option>
+                    <option value="">Maharastra</option>
+                    <option value="">Manipur</option>
+                    <option value="">Meghalya</option>
+                    <option value="">Mizoram</option>
+                    <option value="">Nagaland</option>
+                    <option value="">Odisa</option>
+                    <option value="">Punjab</option>
+                    <option value="">Rajastan</option>
+                    <option value="">Sikkim</option>
+                    <option value="">Tamilnadi</option>
+                    <option value="">Telengana</option>
+                    <option value="">Tripura</option>
+                    <option value="">Utrakhand</option>
+                    <option value="">Utter Predesh</option>
+                    <option value="">West bangal</option>
+                    <option value="">Andman nikobar</option>
+                    <option value="">Chandighar</option>
+                    <option value="">Dadar and nagar hweli</option>
+                    <option value="">Delhi</option>
+                    <option value="">Lakshaydwip</option>
+                    <option value="">Puduchery</option>
+                  </select>
+                  <input id="pin" type="Number"placeholder="Pin">
+                  <input type="text"placeholder="Country">
+
+                  <div id="yes">
+                        <div id="j">
+                              <legend>Have you sold before ?</legend>
+                            <div id="as">
+                              <input type="radio" id="sasquatch" name="monster">
+                              <label for="kraken" id="no">YES</label><br>
+                              <input type="radio" id="sasquatch" name="monster">
+                              <label for="sasquatch" id="no">NO</label><br/>
+                            </div>
+                            </div>                        
+                  </div>
+                  <div id="yes">
+                        <div id="j">
+                          <legend>Do you have digital information ready ?</legend>
+                        <div id="as">
+                          <input type="radio" id="sasquatch" name="monster">
+                          <label for="kraken" id="no">YES</label><br>
+                          <input type="radio" id="sasquatch" name="monster">
+                          <label for="sasquatch" id="no">NO</label><br/>
+                        </div>
+                        </div>
+                                               
+              </div>
+              <input id="button" type="submit" value="SUBMIT"/>
+            </form>
+           
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+<script>
+     document.querySelector("form").addEventListener("submit",paymentFunction);
+    function paymentFunction(){
+        event.preventDefault();
+        var name = document.querySelector("#name").value;
+        var No = document.querySelector("#number").value;
+        var email = document.querySelector("#email").value;
+        var bus = document.querySelector("#bus").value;
+        var Add = document.querySelector("#add").value;
+
+        
+        if(No.length==10 && email.length>6 && bus.length>5 && Add.length>10){
+            alert("Now you are vender.")
+        }
+        else if(No.length!==10 && email.length<6 && bus.length<5 && Add.length!==10){
+            alert("Error! Enter valid details.")
+        }
+        else{
+            window.location.href="index.html"
+        }
+    }

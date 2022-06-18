@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        
+        form {
+            width: 400px;
+            display: grid;
+            gap: 20px;
+            font-family: sans-serif;
+            padding: 10px 30px 30px;
+            margin: auto;
+            margin-top: 40px;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+
+        #signup {
+            box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+            width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            padding-bottom: 20px;
+            margin-bottom:30px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input {
+            height: 55px;
+            border-radius: 5px;
+            border: rgba(128, 128, 128, 0.23) solid 0.1px;
+            padding: 0px 20px;
+            font-size: 16.4px;
+        }
+
+        input:last-child {
+            height: 55px;
+            color: grey;
+        }
+
+        #accExists {
+            text-align: center;
+            font-size: 19px;
+            font-family: sans-serif;
+        }
+
+        #accExists>a {
+            text-decoration: none;
+        }
+        body{
+            background-color:turquoise;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="signup">
+        <form id="form">
+            <h2>Login</h2>
+            <label>Email</label>
+            <input id="email" type="email" placeholder="Enter Email" required />
+            <label>Password</label>
+            <input id="password" minlength="8" maxlength="12" type="password" placeholder="Enter Password" required />
+            <input id="sub" type="submit" value="LOGIN" />
+        </form>
+        <p id="accExists">Create an account? <a href="sign-up.html">SIGN-UP</a></p>
+    </div>
+
+</body>
+
+</html>
+<script>
+    
+    function signupPage() {
+        window.location.href = "signup.html"
+    }
+    function loginPage() {
+        window.location.href = "login.html"
+    }
+    
+   
+</script>
