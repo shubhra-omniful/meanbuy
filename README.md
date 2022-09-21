@@ -1,20 +1,51 @@
-# clone of meanbuy.com
 
-https://symphonious-liger-8b365d.netlify.app/
+# Clone of meanbuy.com
 
-<!-- https://shubhrakantighosh.github.io/meanbuy/-->
-<!--  https://melodious-kashata-06d8eb.netlify.app-->
+A web application for buying at for men’s, women’s, and kids’ electronics accessories.
 
-<h3>A web application for buying at for men’s, women’s, and kids’ electronics accessories.</h3>
-<h4>Features:</h4>
-<p>Social Sign-in/Sign-up
-<p>Product Gallery</p>
-<p>Cart </p>
-<p>Filter </p>
-<p>Payment</p>
-<div><h4>Tech Stack: HTML | CSS | Javascript</h4></div>
-<h3>Areas of responsibility:</h3>
-<p>Create a website landing page.</p>
-<p>Lay out the database schema and build local storage.</p>
-<p>A collaborative project built by a team of six was executed in five days.</p>
+
+## Demo
+
+[Click Here](https://symphonious-liger-8b365d.netlify.app/)
+## Features ✨
+
+- Social Sign-in/Sign-up
+- Product Gallery
+- Cart
+- Filter
+- Payment
+## Tech Stack 💻
+
+HTML, CSS, JAVASCRIPT
+
+
+
+
+## Installation
+
+- Clone the repository.
+- CD into the folder
+- Run it via Live Server 
+    
+## Screenshots 📷
+
+![App Screenshot](https://i.imgur.com/XKcMfWT.png)
+![App Screenshot](https://i.imgur.com/383NZf8.png)
+
+#### Product Gallery:
+![App Screenshot](https://i.imgur.com/4zhVT1C.png)
+
+#### Social Sign-in/Sign-up:
+![App Screenshot](https://i.imgur.com/6i7Qtch.png)
+![App Screenshot](https://i.imgur.com/Tc8s12J.png)
+
+#### Cart:
+![App Screenshot](https://i.imgur.com/v8M4mSg.png)
+
+#### Payment:
+![App Screenshot](https://i.imgur.com/75WpIDi.png)
+![App Screenshot](https://i.imgur.com/yW6EtPi.png)
+## More:
+
+A collaborative project built by a team of five was executed in five days.
 
