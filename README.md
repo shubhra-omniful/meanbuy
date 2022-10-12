@@ -4,7 +4,7 @@
 A web application for buying at for men’s, women’s, and kids’ electronics accessories.
 
 
-[Click Here](https://symphonious-liger-8b365d.netlify.app/)
+[Click Here](https://meanbuy2022.netlify.app/)
 ## Features ✨
 
 - Social Sign-in/Sign-up
