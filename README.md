@@ -4,7 +4,7 @@
 A web application for buying at for men’s, women’s, and kids’ electronics accessories.
 
 
-[Click Here](https://meanbuy2022.netlify.app/)
+[Click Here](https://meanbuy20-hgjfxf-hgfxc876-ugfxc89n-h7.netlify.app/)
 ## Features ✨
 
 - Social Sign-in/Sign-up
